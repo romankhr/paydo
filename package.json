@@ -6,6 +6,12 @@
     "playwright": "^1.49.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.49.1"
+    "@playwright/test": "^1.49.1",
+    "cucumber-html-reporter": "^6.0.0"
+  },
+  "scripts": {
+    "test": "npx cucumber-js tests/features --tags \"@smoke\" --format json:./cucumber_report.json",
+    "generate-report": "node generate-report.js",
+    "test-and-report": "npm run test && npm run generate-report"
   }
 }

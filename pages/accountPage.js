@@ -8,7 +8,6 @@ class AccountPage {
 
     async verifyTitle(expectedTitle) {
         console.log(`Verifying if the Title is ${expectedTitle}...`);
-        await this.page.waitForTimeout(20000);
         const titleElements = await this.page.locator('head title', { timeout: 60000 }).allTextContents();
         const isTitleFound = titleElements.some((title) => title.includes(expectedTitle));
         expect(isTitleFound).toBe(true);
@@ -34,7 +33,7 @@ class AccountPage {
         console.log(`Enter ${email} email`);
         await this.page.fill('#mat-input-0', email);
     }
-    
+
     async enterPassword(password) {
         console.log(`Enter ${password} password`);
         await this.page.fill('#mat-input-1', password);

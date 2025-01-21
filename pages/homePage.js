@@ -50,12 +50,12 @@ class HomePage {
         const isVisible = await this.page.locator(`img[alt="Paydo logo"]`).isVisible();
         expect(isVisible).toBe(true);
     }
-    
+
     async clickButtonByText(buttonText) {
         console.log(`Clicking the button with text: "${buttonText}"`);
         await this.page.locator(`button:has-text("${buttonText}")`).click();
     }
-    
+
 }
 
 export default HomePage;

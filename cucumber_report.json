@@ -1,0 +1,547 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "paydo-api-tests;get-user-by-id",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Get user by ID",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 583549800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I send a GET request to \"/users/{id}\" with id \"1\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\apiSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1574948799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status should be \"200\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\apiSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1899600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the response should contain a user with id \"1\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\apiSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3063000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 210608099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@paydo-003",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "paydo-api-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Paydo API Tests",
+    "tags": [],
+    "uri": "tests\\features\\apiTests.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "paydo-login-page-test;check-presence-of-ui-elements-on-open-account-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Check presence of UI elements on Open Account page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 709515699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User opens Paydo Home Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3808367599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks \"Accept\" Cookies on home pages",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93578599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User should see the \"paydo.com\" URL",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1254099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User clicks \"Open account\" link button",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 332828699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The page title should be \"Create account\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20027122999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User should see the \"account.paydo.com\" URL",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 693900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Verify the h1 text \"Create a personal account\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11435999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Verify the 'Back to Homepage' is displayed on Account Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5024699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Verify the 'Log In' is displayed on Account Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3827300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Verify the 'Email' is displayed on Account Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2532299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Verify the 'Password' is displayed on Account Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3817900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Verify the 'Confirm password' is displayed on Account Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5587300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Verify the 'Create an account' is displayed on Account Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5155099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Verify the 'Switch to create Business account' is displayed on Account Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11932499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Verify the 'Enter email' fields are editable on Account Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12150199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Verify the 'Enter password' fields are editable on Account Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12682399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Verify the Paydo logo is displayed",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5831299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 233695499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@paydo-001",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "paydo-login-page-test;verify-error-message-is-displayed-for-invalid-login-credentials",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Verify error message is displayed for invalid login credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 544741800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "User opens Paydo Home Page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3177614900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "User clicks \"Accept\" Cookies on home pages",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107822700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "User should see the \"paydo.com\" URL",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 521500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User clicks \"Log In\" link button",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 490084000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "The page title should be \"Welcome back\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20023048199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "User should see the \"account.paydo.com\" URL",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1101299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Verify the h1 text \"Welcome back\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10293300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "User inserts \"Tests@tests.com\" in email input field on Account page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16478899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User inserts \"Password\" in password input field on Account page",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25487100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "User clicks \"Log in\" button",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82417300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "User should see the error message \"The email address or password you entered is incorrect\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Roman_Khrabatyn\\paydo\\paydo\\tests\\features\\step_definitions\\loginPageSteps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3399542600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 270951699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 25
+          },
+          {
+            "name": "@smoke",
+            "line": 26
+          },
+          {
+            "name": "@paydo-002",
+            "line": 27
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "paydo-login-page-test",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Paydo Login Page test",
+    "tags": [],
+    "uri": "tests\\features\\test.feature"
+  }
+]

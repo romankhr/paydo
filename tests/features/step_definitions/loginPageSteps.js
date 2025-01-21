@@ -60,7 +60,7 @@ Then("User inserts {string} in password input field on Account page", async func
 });
 
 Then('User should see the error message {string}', async function (expectedMessage) {
-    accountPage = new AccountPage(); 
+    accountPage = new AccountPage();
     await accountPage.verifyErrorMessage(expectedMessage);
 });
 

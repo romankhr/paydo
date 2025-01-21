@@ -2,12 +2,20 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   timeout: 60000,
-  retries: 2, // Retries failed tests twice
+  retries: 2,
   use: {
-    headless: false, // Run tests in headful mode (browser visible)
-    baseURL: 'https://paydo.com', // Set a base URL for all tests
-    viewport: { width: 1280, height: 720 }, // Default viewport size
+    headless: false,
+    baseURL: 'https://paydo.com',
+    viewport: { width: 1280, height: 720 },
     actionTimeout: 60000,
     navigationTimeout: 60000,
+
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+    outputDir: 'test-results',
   },
+  reporter: [
+    ['html', { outputFolder: 'test-results', open: 'always' }],
+    ['json', { outputFile: 'cucumber_report.json' }],
+  ],
 });
